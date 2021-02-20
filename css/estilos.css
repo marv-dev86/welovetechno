@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100vh;
+    
+    /* border: black solid 1px; */
+}
+
+body{
+    height: 100%;
+    background-color: #262626;
+    /* border: red solid 1px; */
+    position: relative;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    height: 6%;
+    width: calc(100vw - 196px);
+    background-color: #191926;
+}
+
+
+
+.bars{
+    display: none;
+}
+main{
+    position: relative;
+}
+
+/*radio html*/
+
+.page_radio th{
+    font-weight: 300;
+
+}
+
+.page_radio thead th{
+    font-weight: 600;
+}
+
+.page_radio{
+    margin: 0 auto;
+    
+    /* border: solid 1px red; */
+}
+
+/*eventos html*/
+.card{
+    /* background-color: #191919; */
+    background-image: url(../imgs/cxgt.jpeg);
+    background-position: center;
+   
+    color: E09C1B;
+    /* border: #A8FF00 solid .5px; */
+}
+
+.card h3,p{
+    font-weight: 300;
+}
+
+.card span{
+    font-weight: 600;
+}
+
+.card-body{
+    transition: transform .3s;
+}
+
+.card:hover{
+    box-shadow:3px 5px 5px #191925;
+}
+
+.card:hover .card-body{
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+
+/*menu*/
+
+.menu{
+    position: fixed;
+    left: 0;
+    width: 196px;
+    background-color:#191926 ;
+    height: 100%;
+    z-index: 100;
+    /* border: #1EE7F5 2px dashed; */
+}
+
+.menu ul{
+    list-style: none;
+    
+}
+.menu li{
+    margin-bottom: 1.5rem;
+    
+}
+
+.menu_item {
+    color: #3a5d5f;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+
+.menu li i{
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+   
+}
+
+ul li a:hover{
+   color: #1EE7F5;
+}
+
+
+
+
+
+.sidebar{
+    margin-top: 6rem;
+}
+
+.activo{
+    color: #1EE7F5;
+}
+
+
+
+/*contenido*/
+
+.contenido{
+    
+    position: relative;
+    top: 6%;
+    left: 196px;
+    width: calc(100vw - 196px);
+    /* border: red solid 1px; */
+    height: 94%;
+}
+
+
+
+
+
+/*player*/
+
+
+.player{
+
+    position: fixed;
+    bottom: 0;
+    /* right: 0; */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #191921;
+    opacity: .8;
+    z-index: 100;
+    /* border: #1EE7F5 dashed 1px; */
+
+}
+
+.title{
+    color: #1EE7F5;
+}
+
+#play{
+    font-size: 2.5rem;
+    color: #A8FF00;
+}
+
+small{
+    font-size: .7rem;
+}
+
+
+
+
+
+@media only screen and (max-width:575px){
+    
+    header{
+        width: 100%;
+    }
+
+    .bars{
+        display: block;
+    }
+
+   .nav{
+       justify-content: space-between;
+   }
+    
+    
+    /* menu  */
+    .menu{
+      
+        display: none;
+        /* background-color: #191919;
+        position:relative;
+        left: 0;
+        height: auto;
+        z-index: 99;
+        width: 100%;
+        text-align: inherit; */
+        
+    }
+    
+    /* .menu a{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    
+    .menu i{
+        font-size: .9rem;
+    }
+    
+    .menu_item{
+        width: .7rem;
+        height: .7rem;
+        margin-right: .5rem;
+        margin-bottom: 1rem;
+    } */
+
+
+    /* contenido */
+
+    .contenido{
+       height: auto;
+       width: 80%;
+       left: 0;
+       margin: 0 auto;
+        
+    }
+
+    .contenedor_corousel{
+        width: 80%;
+        /* border: solid 1px white; */
+        margin: 0 auto;
+    }
+
+   
+
+    .eventos{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+
+    /* player  */
+    .title{
+        font-size: xx-small;
+    }
+
+    #play{
+        font-size: 1.5rem;
+    }
+
+    small{
+        font-size: .3rem;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
